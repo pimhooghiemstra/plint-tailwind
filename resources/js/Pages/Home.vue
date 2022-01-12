@@ -1,6 +1,5 @@
 <template>
-    <Head title="Welcome" />
-
+    <Head title="Maatwerk websites, webshops en webapplicaties" />
     <div class="grid place-items-center min-h-screen bg-white dark:bg-gray-900 sm:pt-0">
         <div class="max-w-3xl leading-7 bg-purple-100 p-8 rounded-2xl">
             <h2 class="font-semibold font-oswald text-2xl text-purple-500 hover:text-sky-600">
@@ -13,11 +12,12 @@
             <!-- <img src="/images/road-vision.jpg" alt="Road vision"> -->
             <!-- <Link href="/dashboard">Naar dasboard</Link> -->
         </div>
-
     </div>
 </template>
 
 <script>
+import HomeLayout from '../Layouts/HomeLayout.vue'
+
 export default {
     props: {
         canLogin: Boolean,
@@ -25,6 +25,7 @@ export default {
         laravelVersion: String,
         phpVersion: String,
     },
+    layout: HomeLayout,
 }
 </script>
 
