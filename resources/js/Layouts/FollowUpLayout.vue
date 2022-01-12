@@ -1,14 +1,24 @@
 <template>
     <div>
-        <h1>Follow up page</h1>
+        <Menu />
+        <PageHeader />
         <slot />
+        <Footer />
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import Menu from '../Components/Menu.vue'
+import PageHeader from '../Components/PageHeader.vue'
+import Footer from '../Components/Footer.vue'
+
+export default {
+    components: {
+        Menu,
+        PageHeader,
+        Footer
+    },
+}
 </script>
 
 <style lang="less" scoped>
