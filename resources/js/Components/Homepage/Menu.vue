@@ -1,14 +1,13 @@
 <template>
     <div>
-        <h1>Homepage</h1>
-        <slot />
+        Menu
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+    
+}
 </script>
 
 <style lang="less" scoped>

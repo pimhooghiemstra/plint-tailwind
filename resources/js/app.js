@@ -12,7 +12,9 @@ createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: name => {
         const page = require(`./Pages/${name}.vue`).default
-        page.layout = page.layout || FollowUpLayout
+        if (name !== 'Home') {
+            page.layout = FollowUpLayout
+        }
         return page
     },
     setup({ el, app, props, plugin }) {
